@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 const BASE44_API_KEY = process.env.BASE44_API_KEY;
 const BASE44_APP_ID = "6915d9a15e101ad5f1ac6731";
 
