@@ -3,6 +3,14 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import stripeWebhook from "./routes/stripeWebhook.js";
+import statusRoute from "./routes/status.js";
+
+// JSON body parser para rotas comuns
+app.use(express.json());
+
+// rota status
+app.get("/status", statusRoute);
+
 
 dotenv.config();
 
